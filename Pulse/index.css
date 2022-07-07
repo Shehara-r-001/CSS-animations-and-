@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.pulse {
+  background-color: white;
+  color: black;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 20vh;
+  }
+  40% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0);
+    top: 50vh;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0);
+    top: 30vh;
+  }
+  80% {
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, 0);
+    top: 40vh;
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    top: 50vh;
+  }
+}
+
+.container h1 {
+  text-transform: uppercase;
+  padding: 20px;
+}
