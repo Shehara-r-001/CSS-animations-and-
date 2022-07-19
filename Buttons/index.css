@@ -21,7 +21,6 @@ body {
   cursor: pointer;
   position: relative;
   font-weight: bold;
-  text-transform: uppercase;
 }
 
 .btn::before {
