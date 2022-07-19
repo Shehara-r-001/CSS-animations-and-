@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.btn {
+  margin: 5px 0;
+  padding: 10px 20px;
+  background: none;
+  border: 2px solid #00e6e6;
+  color: #00e6e6;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #00e6e6;
+  z-index: -1;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.btn01::before {
+  height: 0;
+}
+
+.btn01:hover::before {
+  height: 100%;
+  transition: all 0.2s;
+}
+
+.btn02::before {
+  height: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.btn02:hover::before {
+  height: 200%;
+  transition: all 0.4s;
+}
+
+.btn02 {
+  overflow: hidden;
+}
+
+.btn03::before {
+  transform: rotate(90deg);
+  /* left: calc(-50% - 20px); */
+  transform-origin: bottom left;
+}
+
+.btn03:hover::before {
+  transform: rotate(0);
+  transition: all 0.2s;
+}
+
+.btn03 {
+  overflow: hidden;
+}
+
+.btn04::before {
+  height: 0%;
+  top: 50%;
+}
+
+.btn04:hover::before {
+  height: 100%;
+  top: 0;
+  transition: all 0.2s;
+}
