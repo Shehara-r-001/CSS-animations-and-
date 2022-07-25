@@ -50,7 +50,7 @@ body {
 
 @keyframes shadow_effect {
   from {
-    width: 40px;
+    width: 60px;
   }
   to {
     width: 100px;
